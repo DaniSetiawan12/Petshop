@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="15dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/det"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edtPetshop"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:drawableLeft="@drawable/ic_username"
+            android:hint="Nama Petshop" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edtAlamat"
+            android:focusable="false"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_address"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:hint="Alamat" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_button"
+        android:text="Navigasi Maps"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/goRoutes"
+        android:textColor="#FFFFFF"
+        android:drawableTint="#FFFFFF"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>

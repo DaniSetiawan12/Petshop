@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin.InputData">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/img_input_form"/>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginBottom="25dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Input Jam Buka Petshop"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dip"
+                        android:layout_weight="1"
+                        android:id="@+id/edtSenin"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:drawableLeft="@drawable/ic_day"
+                        android:hint="Senin"
+                        android:enabled="false"
+                        android:inputType="text" />
+
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dip"
+                        android:layout_weight="1"
+                        android:id="@+id/edtJamSenin"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:drawableLeft="@drawable/ic_clock"
+                        android:hint="Jam"
+                        android:inputType="textAutoComplete" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dip"
+                        android:layout_weight="1"
+                        android:id="@+id/edtSelasa"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:drawableLeft="@drawable/ic_day"
+                        android:hint="Selasa"
+                        android:enabled="false"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dip"
+                        android:layout_weight="1"
+                        android:id="@+id/edtJamSelasa"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:drawableLeft="@drawable/ic_clock"
+                        android:hint="Jam"
+                        android:inputType="text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dip"
+                        android:layout_weight="1"
+                        android:id="@+id/edtRabu"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:drawableLeft="@drawable/ic_day"
+                        android:hint="Rabu"
+                        android:enabled="false"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dip"
+                        android:layout_weight="1"
+                        android:id="@+id/edtJamRabu"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:drawableLeft="@drawable/ic_clock"
+                        android:hint="Jam"
+                        android:inputType="text" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dip"
+                        android:layout_weight="1"
+                        android:id="@+id/edtKamis"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:drawableLeft="@drawable/ic_day"
+                        android:hint="Kamis"
+                        android:enabled="false"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dip"
+                        android:layout_weight="1"
+                        android:id="@+id/edtJamKamis"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:drawableLeft="@drawable/ic_clock"
+                        android:hint="Jam"
+                        android:inputType="text" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dip"
+                        android:layout_weight="1"
+                        android:id="@+id/edtJumat"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:drawableLeft="@drawable/ic_day"
+                        android:hint="Jum'at"
+                        android:enabled="false"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dip"
+                        android:layout_weight="1"
+                        android:id="@+id/edtJamJumat"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:drawableLeft="@drawable/ic_clock"
+                        android:hint="Jam"
+                        android:inputType="text" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dip"
+                        android:layout_weight="1"
+                        android:id="@+id/edtSabtu"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:drawableLeft="@drawable/ic_day"
+                        android:hint="Sabtu"
+                        android:enabled="false"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dip"
+                        android:layout_weight="1"
+                        android:id="@+id/edtJamSabtu"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:drawableLeft="@drawable/ic_clock"
+                        android:hint="Jam"
+                        android:inputType="text" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dip"
+                        android:layout_weight="1"
+                        android:id="@+id/edtMinggu"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:drawableLeft="@drawable/ic_day"
+                        android:hint="Minggu"
+                        android:enabled="false"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dip"
+                        android:layout_weight="1"
+                        android:id="@+id/edtJamMinggu"
+                        android:drawableTint="@color/colorPrimaryDark"
+                        android:drawableLeft="@drawable/ic_clock"
+                        android:hint="Jam"
+                        android:inputType="text" />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/btnSubmit"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rounded_button"
+                    android:textColor="@color/colorPrimary"/>
+            </LinearLayout>
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

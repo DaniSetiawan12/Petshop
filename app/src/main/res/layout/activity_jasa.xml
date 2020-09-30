@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin.InputData">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/img_input_form"/>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginBottom="25dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Input Jasa"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/edtNamaJasa"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:drawableLeft="@drawable/ic_username"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="Jasa"
+                    android:inputType="text" />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:id="@+id/edtHargaJasa"
+                    android:layout_marginTop="15dp"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:drawableLeft="@drawable/ic_money"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="Harga Jasa"
+                    android:inputType="numberDecimal" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Selesai"
+                    android:id="@+id/btnSubmit"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rounded_button"
+                    android:textColor="@color/colorPrimary"/>
+            </LinearLayout>
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

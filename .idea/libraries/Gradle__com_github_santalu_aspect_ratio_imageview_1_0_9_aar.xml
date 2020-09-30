@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.santalu:aspect-ratio-imageview:1.0.9@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8eed5bb7b5ae0d5c9a41c7eee4fbc5de/jetified-aspect-ratio-imageview-1.0.9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8eed5bb7b5ae0d5c9a41c7eee4fbc5de/jetified-aspect-ratio-imageview-1.0.9/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.santalu/aspect-ratio-imageview/1.0.9/7491058626971a00e3dc499ffe516d4bd0f04e83/aspect-ratio-imageview-1.0.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#F5F5F5"
+    tools:context=".users.LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:src="@drawable/icon_pet"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login !"
+        android:textSize="18dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:background="#F5F5F5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="8dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:id="@+id/edtUsername"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:drawableLeft="@drawable/ic_username"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="Username"
+                    android:inputType="text" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:id="@+id/edtPassword"
+                    android:layout_marginTop="15dp"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:drawableLeft="@drawable/ic_lock"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="Password"
+                    android:inputType="textPassword" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:id="@+id/btnLogin"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rounded_button"
+                    android:textColor="@color/colorPrimary"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Punya Petshop ? Daftar Disini"
+                    android:textAllCaps="false"
+                    android:id="@+id/btnDaftar"
+                    android:background="@null"
+                    android:textColor="@color/colorPrimaryDark"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="right"
+                    android:id="@+id/skipLogin"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="Skip Login"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tint="@color/colorPrimaryDark"
+                        android:src="@drawable/ic_next"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

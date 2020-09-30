@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin.InputData">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/img_input_form"/>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginBottom="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ubah Jam Buka Petshop"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/edtSenin"
+                            android:focusable="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:ems="8"
+                            android:text="Senin"
+                            android:hint="Hari" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/edtJamSenin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:ems="8"
+                            android:hint="Jam Buka" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorGreen"
+                        android:tint="#FFFFFF"
+                        android:src="@drawable/ic_check"
+                        android:id="@+id/fabButtonSimpanJamSenin"
+                        app:fabSize="mini"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/edtSelasa"
+                            android:focusable="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:ems="8"
+                            android:text="Selasa"
+                            android:hint="Hari" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/edtJamSelasa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:ems="8"
+                            android:hint="Jam Buka" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorGreen"
+                        android:tint="#FFFFFF"
+                        android:src="@drawable/ic_check"
+                        android:id="@+id/fabButtonJamSelasa"
+                        app:fabSize="mini"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/edtRabu"
+                            android:focusable="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:ems="8"
+                            android:text="Rabu"
+                            android:hint="Hari" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/edtJamRabu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:ems="8"
+                            android:hint="Jam Buka" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorGreen"
+                        android:tint="#FFFFFF"
+                        android:src="@drawable/ic_check"
+                        android:id="@+id/fabButtonJamRabu"
+                        app:fabSize="mini"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/username_text_input_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/edtKamis"
+                            android:focusable="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:ems="8"
+                            android:text="Kamis"
+                            android:hint="Hari" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/edtJamKamis"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:ems="8"
+                            android:hint="Jam Buka" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorGreen"
+                        android:tint="#FFFFFF"
+                        android:src="@drawable/ic_check"
+                        android:id="@+id/fabButtonJamKamis"
+                        app:fabSize="mini"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/edtJumat"
+                            android:focusable="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:ems="8"
+                            android:text="Jum'at"
+                            android:hint="Hari" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/edtJamJumat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:ems="8"
+                            android:hint="Jam Buka" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorGreen"
+                        android:tint="#FFFFFF"
+                        android:src="@drawable/ic_check"
+                        android:id="@+id/fabButtonJamJumat"
+                        app:fabSize="mini"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/edtSabtu"
+                            android:focusable="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:ems="8"
+                            android:text="Sabtu"
+                            android:hint="Hari" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/edtJamSabtu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:ems="8"
+                            android:hint="Jam Buka" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorGreen"
+                        android:tint="#FFFFFF"
+                        android:src="@drawable/ic_check"
+                        android:id="@+id/fabButtonJamSabtu"
+                        app:fabSize="mini"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/edtMinngu"
+                            android:focusable="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:ems="8"
+                            android:text="Minggu"
+                            android:hint="Hari" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/edtJamMinggu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:ems="8"
+                            android:hint="Jam Buka" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorGreen"
+                        android:tint="#FFFFFF"
+                        android:src="@drawable/ic_check"
+                        android:id="@+id/fabButtonJamMinggu"
+                        app:fabSize="mini"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>
